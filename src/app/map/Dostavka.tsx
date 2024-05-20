@@ -55,8 +55,7 @@ const MapComponent: React.FC = () => {
 
         // Получение координат конечной точки
         const endCoords = endMarker.getLatLng();
-        const url = `https://router.project-osrm.org/route/v1/driving/${startCoords[1]},${startCoords[0]};${endCoords.lng},${endCoords.lat}
-        ?overview=full&geometries=geojson`;
+        const url = `https://router.project-osrm.org/route/v1/driving/${startCoords[1]},${startCoords[0]};${endCoords.lng},${endCoords.lat}?overview=full&geometries=geojson`;
 
         // Запрос для получения данных о маршруте
         fetch(url)
