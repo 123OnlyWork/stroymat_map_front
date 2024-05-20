@@ -1,0 +1,14 @@
+/* AboutUsPage.module.css */
+.aboutUsPage {
+    background-color: #000; /* Задаем черный цвет фона */
+    color: #ff0000; /* Задаем красный цвет текста */
+    padding: 50px; /* Добавляем внутренние отступы */
+    text-align: center; /* Центрируем текст */
+  }
+  
+  .h2 {
+    font-size: 24px; /* Размер шрифта */
+    margin-bottom: 20px; /* Отступ снизу */
+    text-transform: uppercase; /* Преобразуем текст в верхний регистр */
+  }
+  
