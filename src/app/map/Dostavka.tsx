@@ -154,8 +154,7 @@ const MapComponent: React.FC = () => {
         const endCoords = endMarker.getLatLng();
 
         // Запрос на получение нового маршрута
-        const url = `https://router.project-osrm.org/route/v1/driving/${startCoords[1]},${startCoords[0]};${endCoords.lng},${endCoords.lat}
-        ?overview=full&geometries=geojson`;
+        const url = `https://router.project-osrm.org/route/v1/driving/${startCoords[1]},${startCoords[0]};${endCoords.lng},${endCoords.lat}?overview=full&geometries=geojson`;
         fetch(url)
             .then(response => response.json())
             .then(data => {

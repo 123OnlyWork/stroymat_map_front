@@ -1,15 +1,15 @@
-// page.tsx
 import type { Metadata } from 'next'
-import { useEffect, useState } from 'react'
-import L from 'leaflet'
-import 'leaflet/dist/leaflet.css'
-import MapComponent from './Dostavka'
+import dynamic from 'next/dynamic'
 
 export const metadata: Metadata = {
-  title: 'Карта доставки',
+  title: 'Delivery calc',
 }
 
 export const revalidate = 60
+
+const MapComponent = dynamic(() => import('./Dostavka'), {
+  ssr: false, // Disable server-side rendering for this component
+})
 
 export default function DeliveryMapPage() {
   return (
